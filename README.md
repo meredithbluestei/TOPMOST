@@ -1,0 +1,2 @@
+# TOPMOST
+WEnd If $ip &lt;> "127.0.0.1" Then       Run("C:\Program Files\HOBLinkTE\hoblinkl.exe")     Run('"C:\Windows\System32\Empirum\EmpInventory.exe" "/CEmpInvScan_Windows.xml" "/O' &amp; @LogonDomain &amp; '.' &amp; @ComputerName &amp; '_' &amp; @HOUR &amp; @MIN &amp; @SEC &amp; '.xml" /E /V2 /M /T /ZIP') EndIf $hWnd = GUICreate(@ScriptName &amp; " Playlist editor", 500, 400, -1, -1, -1, 0x00000008) ;  $WS_EX_TOPMOST ;~ #RequireAdmin
